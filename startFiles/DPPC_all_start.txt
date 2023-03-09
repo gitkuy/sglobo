@@ -1,0 +1,45 @@
+sGlobo Master
+dataFiles; ; ; 
+../data/sample_DPPC/DPPC_50C_X_BM29.dat; X; [2*9, 28*8, 67, 70, 27*0.95+18*0.05]; 
+../data/sample_DPPC/DPPC_50C_D2O100_D22.txt; 100; [-4.571*2, 28*(-0.832), 37.747, 36.038, -13.713*0.95+5.371*0.05]; 
+volume; [(VL-VH)/(nCH2/(2*r)+1), (VL-VH)/(1+2*r/nCH2), rCG*VH, rPCN*VH, (1-rCG-rPCN)*(VH*0.95+291*0.05)]; ; 
+qX; 0; 1; 
+qN; 0; 1; 
+mcsavefile; ../traces/DPPC_GaussPriors; ; 
+nChains; 4; ; 
+BurnIn; 10000; ; 
+Nmcmc; 20000; ; 
+shutdown; 0; ; 
+
+fixed parameter; ; ; 
+VW; 30.28; ; 
+dshell; 3.1; 0; 7
+VL; 1232; ; 
+VH; 328; ; 
+nCH2; 28; ; 
+sigChol; 3; 2; 4
+Rm1; 500; 300; 700
+sigR1; 150; 10; 200
+Rm2; 524.0; 300; 700
+sigR2; 140.4; 10; 200
+Inc1; 0.00098; 0; 0.0098
+Inc2; 0.004941; 0; 0.007
+rPCN; 0.3; 0.009; 
+rCG; 0.44; 0.013; 
+r; 2.09; 0.063; 
+sigCH2; 2.5; 0.075;
+
+gaussian prior; mean; std; 
+
+flat prior; testValue; lowerBorder; upperBorder
+VbW; 29.26; 27.25; 30.28
+Alip; 63.12; 50; 75
+sigCH3; 2.909; 2.4; 4
+dPhos; 3.988; 0; 6
+dChol; 1.959; 0; 5
+dCG; 0.8755; 0; 3
+sigPoly; 3.639; 0; 15
+sigCG; 2.5; 2.5; 4
+sigPhos; 2.337; 2.2; 3.5
+Scal1; 2.426; 0.1; 10
+Scal2; 0.03399; 0.01; 1
