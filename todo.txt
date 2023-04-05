@@ -1,0 +1,4 @@
+Make more parameters and fitting options available to adapt in the start file
+  in particular, make it possible to to change solvent sld (ions)
+Make comments possible in start files (another column and/or ignore lines with #comment)
+make a documentation..
